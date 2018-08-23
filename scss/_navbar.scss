@@ -1,0 +1,46 @@
+.new-navbar{
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 10;
+  
+    #navi {
+      padding: 0;
+    }
+  
+    ul {
+        list-style: none;
+  
+      li {
+  
+        a {
+            text-align: center;
+            color: white;
+            padding: 15px;
+            font-size: 20px;
+            min-width: 55px;
+            transition: transform 0.2s;
+            display: inline-block;
+        }
+  
+        .home {
+            background: $secondary-color;
+        }
+  
+        .about {
+            background: $third-color;
+        }
+  
+        .instagram {
+            background: $fourth-color;
+        }
+  
+        .contact {
+            background: $fifth-color;
+        }
+      }
+    }
+  }
+  

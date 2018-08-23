@@ -1,0 +1,36 @@
+#instagram {
+    position: relative;
+    min-height: 75vh;
+    background: $third-color;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h2 {
+        color: white;
+        font-weight: 300;
+        font-size: 3rem;
+        text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .slideshow {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        text-align: center;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+
+        #instafeed {
+            margin: 0 auto;
+            width: 80%;
+
+            img {
+                max-width: 250px;
+                height: auto;
+                margin: 5px;
+            }
+        }
+    }
+}

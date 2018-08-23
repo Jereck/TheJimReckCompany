@@ -1,0 +1,37 @@
+#about {
+    position: relative;
+    min-height: 100vh;
+    background-image: url(/images/about.jpg);
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .about-container {
+        color: white;
+        float: right;
+        margin: 25% auto;
+        width: 50%;
+        padding: 20px;
+        
+
+        .about-text {
+            background: $secondary-color;
+            padding: 20px;
+            float: left;
+            text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+
+            h3 {
+                font-size: 3rem;
+                font-weight: 300;
+            }
+    
+            p {
+                tab-size: 16;
+                font-size: 1.5rem;
+                line-height: 2rem;
+                font-weight: 100;
+            }
+        }
+    }
+}

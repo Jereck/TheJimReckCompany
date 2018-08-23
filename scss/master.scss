@@ -1,0 +1,61 @@
+@import 'config.scss';
+@import 'navbar.scss';
+@import 'about.scss';
+@import 'instagram.scss';
+@import 'newsletter.scss';
+@import 'contact.scss';
+
+*{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    min-height: 200vh;
+    background-image: url(/images/masthead.jpg);
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .mast-header {
+        position: absolute;
+        width: 100%;
+        top: 20%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+
+        h1 {
+            font-size: calc(100% + 4vw);
+            color: white;
+            font-weight: 300;
+            text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    .mast-body{
+        background: $secondary-color;
+        padding: 40px;
+        width: 50%;
+        color: white;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+
+        h2 {
+            font-weight: 300;
+            font-size: calc(100% + 2vw);
+        }
+ 
+        p {
+            padding-left: 5%;
+            padding-top: 20px;
+            font-size: calc(50% + 1vw);
+            line-height: 2.5rem;
+        }
+    }
+}
