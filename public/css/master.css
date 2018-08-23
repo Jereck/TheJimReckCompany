@@ -98,6 +98,10 @@
     margin: 0 auto;
     width: 80%;
     text-align: center; }
+  #newsletter h2 {
+    font-weight: 300;
+    font-size: 3rem;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); }
 
 /* Changes the style of the overall form */
 #mc_embed_signup {
@@ -117,8 +121,11 @@
 /* Styles the input boxes */
 #mc_embed_signup input {
   height: 50px;
-  width: 80%;
-  padding-left: 10px; }
+  width: 60%;
+  padding-left: 10px;
+  border: none;
+  margin-bottom: 2px;
+  border-radius: 5px; }
 
 /* Styles the subscribe button */
 #mc_embed_signup .button {
