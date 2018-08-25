@@ -95,4 +95,10 @@
 
         }
     }
+
+    #footer {
+        .footer-container {
+            grid-template-columns: auto;
+        }
+    }
 }

@@ -199,6 +199,25 @@
       background: transparent;
       cursor: pointer; }
 
+#footer {
+  min-height: 25vh;
+  background: #1a512e;
+  color: white; }
+  #footer .footer-container {
+    padding-top: 50px;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: auto auto auto; }
+    #footer .footer-container .logo img {
+      width: 200px; }
+    #footer .footer-container .contact-info p, #footer .footer-container .social-media-links p {
+      overflow: hidden;
+      padding: 5px; }
+    #footer .footer-container .contact-info i, #footer .footer-container .social-media-links i {
+      padding-right: 5px;
+      font-size: 1.5rem;
+      overflow: hidden; }
+
 * {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -288,4 +307,6 @@ header {
     #contact .form-container .form-group .submit {
       height: 25px;
       font-size: 1rem;
-      margin-bottom: 20px; } }
+      margin-bottom: 20px; }
+  #footer .footer-container {
+    grid-template-columns: auto; } }

@@ -1,0 +1,31 @@
+#footer {
+    min-height: 25vh;
+    background: $primary-color;
+    color: white;
+
+    .footer-container {
+        padding-top: 50px;
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: auto auto auto;
+
+        .logo {
+            img {
+                width: 200px;
+            }
+        }
+
+        .contact-info, .social-media-links {
+
+            p {
+                overflow: hidden;
+                padding: 5px;
+            }
+            i {
+                padding-right: 5px;
+                font-size: 1.5rem;
+                overflow: hidden;
+            }
+        }
+    }
+}
