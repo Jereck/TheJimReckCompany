@@ -246,7 +246,9 @@ header {
   .new-navbar {
     display: none; }
   header .mast-header {
-    position: absolute; }
+    position: absolute;
+    left: 50%;
+    width: 80%; }
     header .mast-header h1 {
       font-size: 2rem; }
   header .mast-body {
