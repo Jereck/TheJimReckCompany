@@ -1,6 +1,7 @@
 const   express     = require('express'),
         bodyParser  = require('body-parser'),
         nodemailer  = require('nodemailer'),
+        xoauth2         = require('xoauth2'),
 
         port = process.env.PORT || 3050,
         app = express();
@@ -29,15 +30,14 @@ app.post('/send', (req, res) => {
     `;
 
     let transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
-        port: '587',
         service: 'gmail',
         auth: {
-            user: 'jakereck@gmail.com',
-            pass: 'Stella1011!'
-        },
-        tls: {
-            rejectUnauthorized: false
+            xoauth2: xoauth2.createXOAuth2Generator({
+                user: 'jakereck@gmail.com',
+                clientId: '645131124041-m4fn94kcevmfn8796juqhg3e0lrm57i9.apps.googleusercontent.com',
+                clientSecret: 'qhoFXuXj_7cZTmxPfWcrKctB',
+                refreshToken: '1/Mip28I-TqRqmJQS4BKHef6rQcxXMdYBocnImc8nGl9g',
+            })
         }
     });
 
