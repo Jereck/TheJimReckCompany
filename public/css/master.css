@@ -209,7 +209,7 @@
     justify-content: space-around;
     grid-template-columns: auto auto auto; }
     #footer .footer-container .logo img {
-      width: 200px; }
+      width: 300px; }
     #footer .footer-container .contact-info p, #footer .footer-container .social-media-links p {
       overflow: hidden;
       padding: 5px; }
