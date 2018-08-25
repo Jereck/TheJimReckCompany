@@ -1,3 +1,17 @@
+<?php
+    if($_POST["submit"]) {
+        $recipient="jakereck@gmail.com";
+        $subject="New Contact Request";
+        $sender=$_POST["name"];
+        $senderEmail=$_POST["email"];
+        $senderPhone=$_POST["phone"];
+        $message=$_POST["message"];
+
+        $mailBody="Name: #sender\nEmail: $senderEmail\n\n$message";
+
+        mail($recipient, $subject, $mailBody, "From: $sender");
+    }
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -52,8 +66,8 @@
                 <h2>Welcome to the Jim Reck Company...</h2>
                 <p>
                     Supplying superior quality nursery stock and unique
-                    hardwoods for over 25 years. From annuals to 30’ evergreens and everything in between, we
-                    can supply all your plant needs. Unique hardgoods that set your garden center apart from the
+                    hardgoods for over 25 years. From annuals to 30’ evergreens and everything in between, we
+                    can supply all your plant needs. Exclusive hardgoods that set your garden center apart from the
                     rest round out our offerings.
                 </p>
             </div>    
@@ -68,7 +82,7 @@
                         owned and operated Garden Centers, Re-wholesalers and Landscape Contractors.
                     </p>
                     <p>
-                        Jim's Consultative approach has helped many small businesses understand challenging markets, navigate the ups and downs of teh green industry 
+                        Jim's Consultative approach has helped many small businesses understand challenging markets, navigate the ups and downs of the green industry 
                         and ultimately thrive and grown their business. Jim has a keen sense for marketing and sales training and he openly shares those skills with 
                         his clients. Understanding that partnering with his clients and being instrumental in their success will only support the success and growth 
                         of The Jim Reck Co.
@@ -124,7 +138,7 @@
             </div>
             
             <div class="form-container">
-                <form action="/send" method="POST" id="contact-form">
+                <form action="contact.php" method="POST" enctype="text/plain" id="contact-form">
                     <div class="form-group">
                         <input type="text" class="contact-input" name="name" placeholder="Full Name">
                     </div>
