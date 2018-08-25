@@ -1,0 +1,95 @@
+@include mediaMd {
+    // HEADER
+    .new-navbar {
+        display: none;
+    }
+
+    header {
+        .mast-header {
+            position: absolute;
+            h1 {
+                font-size: 2rem;
+            }
+        }
+
+        .mast-body {
+            min-width: 100%;
+
+            h2 {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    // ABOUT
+    #about {
+
+        .about-container {
+            width: 100%;
+            padding: 0;
+
+            .about-text {
+                background-color: $third-color;
+
+                h3 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    // INSTAGRAM
+
+    // NEWSLETTER
+    #newsletter {
+        .centered {
+            width: 100%;
+        }
+
+        /* Styles the input boxes */
+        #mc_embed_signup  input {
+            height: 50px;
+            width: 80%;
+            padding-left: 10px;
+            border: none;
+            margin-bottom: 2px;
+            border-radius: 5px;
+        }
+    }
+
+    // CONTACT
+    #contact {
+        .contact-header {
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: .75rem;
+        }
+
+        .form-container {
+            width: 80%;
+
+            .form-group {
+                input[type="text"], input[type="email"], textarea {
+                    font-size: 1rem;
+                }
+
+                .submit {
+                    height: 25px;
+                    font-size: 1rem;
+                    margin-bottom: 20px;
+                }
+            }
+
+        }
+    }
+}
