@@ -201,8 +201,8 @@
 
 #footer {
   min-height: 25vh;
-  background: #b0d3bf;
-  color: white; }
+  background: #F5F5F5;
+  color: black; }
   #footer .footer-container {
     padding-top: 50px;
     display: grid;
