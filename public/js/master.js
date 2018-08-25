@@ -1,15 +1,3 @@
-$(document).ready(function(){
-    
-});
-
-$(window).scroll(function(){
-    if($(window).scrollTop() > 0) {
-        $('#header-text').addClass('text-rotate');
-    } else {
-        headerOn();
-    }
-});
-
 // Select all links with hashes
 $('a[href*="#"]')
     // Remove links that don't actually link to anything

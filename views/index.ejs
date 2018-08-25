@@ -63,27 +63,17 @@
         <section id="about">
             <div class="about-container">
                 <div class="about-text">
-                    <h3>About Jim</h3>
+                    <h3>About The Jim Reck Company</h3>
                     <p>
-                        Jim's passion for saving our environment has led him to partner with industry leading 
-                        suppliers who not only focus on 'green' technologies, but share in Jim's desire to take steps
-                        toward protecting and preserving our resources.
+                        For over 25 years, The Jim Reck Company has been supplying the Nursery Industry with the finest products backed by unmatched service.
+                        The Jim Reck Company has grown into a multi-regional supplier of premium nursery stock and unique hard goods, selling to to independently 
+                        owned and operated Garden Centers, Re-wholesalers and Landscape Contractors.
                     </p>
-                    <br />
                     <p>
-                        His consultative approach has helped many small businesses understand challenging markets,
-                        navigate the ups and downs of the green industry and ultimately thrive and grow their business. 
-                        Jim has a keen sense of marketing and sales training and he openly shares those skills with his clients.
-                        Jim understands that partnering with his clients and being instrumental in their success will only 
-                        support the success and growth of The Jim Reck Co.
-                    </p>
-                    <br />
-
-                    <p>
-                        His ability to seek like minded vendors and secure relationships with them has helped build a 
-                        company that others look up to. His sourcing and networking abilities, along with his firm grasp of supply
-                        chain strategies, has halped the company succeed through rough economic times. Jim is always seeking new 
-                        opportunities with companies that share his vision of a greener, more environmentally conscious planet.
+                        Jim's Consultative approach has helped many small businesses understand challenging markets, navigate the ups and downs of teh green industry 
+                        and ultimately thrive and grown their business. Jim has a keen sense for marketing and sales training and he openly shares those skills with 
+                        his clients. Understanding that partnering with his clients and being instrumental in their success will only support the success and growth 
+                        of The Jim Reck Co.
                     </p>
                 </div>
             </div>
@@ -98,7 +88,7 @@
 
         <section id="newsletter">
             <div class="centered">
-                <h2>Subscribe to receive updates!</h2>
+                <h2>If you would like to receive availability updates from our growers, please sign up for our weekly availability list</h2>
 
                 <!-- Begin MailChimp Signup Form -->
                 <div id="mc_embed_signup">
@@ -129,20 +119,24 @@
         </section>
 
         <section id="contact">
-            <h1>Contact Jim Reck Company</h1>
+            <div class="contact-header">
+                <h1>Contact Jim Reck Company</h1>
+                <h2>For more information about our products and services, please fill out the contact section below and we will get right back to you</h2>
+            </div>
+            
             <div class="form-container">
-                <form action="" id="contact-form">
+                <form action="/send" method="POST" id="contact-form">
                     <div class="form-group">
-                        <input type="text" class="contact-input" placeholder="Full Name">
+                        <input type="text" class="contact-input" name="name" placeholder="Full Name">
                     </div>
                     <div class="form-group">
-                        <input type="email" class="contact-input" placeholder="Email">
+                        <input type="email" class="contact-input" name="email" placeholder="Email">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="contact-input" placeholder="Phone Number">
+                        <input type="text" class="contact-input" name="phone" placeholder="Phone Number">
                     </div>
                     <div class="form-group">
-                        <textarea class="contact-input" placeholder="Message"></textarea>
+                        <textarea class="contact-input" name="message" placeholder="Message"></textarea>
                     </div>
                     <div class="form-group">
                         <input type="submit" value="Submit" class="submit">

@@ -69,8 +69,8 @@
     font-size: 3rem;
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); }
   #instagram .slideshow {
+    width: 100%;
     margin-top: 100px;
-    margin-bottom: 100px;
     text-align: center;
     position: relative;
     display: inline-block;
@@ -100,7 +100,7 @@
     text-align: center; }
   #newsletter h2 {
     font-weight: 300;
-    font-size: 3rem;
+    font-size: 1.25rem;
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); }
 
 /* Changes the style of the overall form */
@@ -149,12 +149,18 @@
   background-size: cover;
   padding-top: 200px;
   text-align: center; }
+  #contact .contact-header {
+    width: 80%;
+    margin: 0 auto; }
   #contact h1 {
     color: white;
     font-size: 4rem;
     font-weight: 300;
-    padding-bottom: 200px;
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); }
+  #contact h2 {
+    color: white;
+    font-size: 1rem;
+    padding-bottom: 100px; }
   #contact .form-container {
     margin: 0 auto;
     width: 50%;
