@@ -135,7 +135,9 @@
   background-color: #b0d3bf;
   color: #ffffff;
   margin: 0 auto;
-  border: 1px solid white; }
+  border: none;
+  border-radius: 5px;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); }
   #mc_embed_signup .button:hover {
     transition: background-color .5s ease-in;
     background-color: #c6dc93; }
@@ -192,14 +194,18 @@
       width: 100%;
       height: 50px;
       padding: 0px 15px 0px 15px;
-      margin: -5px 0px 0px 0px;
       font-size: 1.5em;
       color: white;
       outline: none;
       color: white;
+      text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
       border: none;
-      background: transparent;
+      border-radius: 5px;
+      background: #c6dc93;
       cursor: pointer; }
+      #contact .form-container .form-group .submit:hover {
+        transition: background-color .5s ease-in;
+        background-color: #b0d3bf; }
 
 #footer {
   min-height: 25vh;

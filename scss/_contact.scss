@@ -66,17 +66,23 @@
                 height: 50px;
                 padding: 0px 15px 0px 15px;
 
-                margin: -5px 0px 0px 0px;
+                // margin: -5px 0px 0px 0px;
                 font-size: 1.5em;
                 color: white;
                 
                 outline: none;
                 color: white;
-
+                text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
                 border: none;
+                border-radius: 5px;
 
-                background: transparent;
+                background: $fourth-color;
                 cursor: pointer;
+
+                &:hover {
+                    transition: background-color .5s ease-in;
+                    background-color: $third-color;
+                }
             }
         }
     }
