@@ -9,7 +9,7 @@ $( document ).ready(function() {
         filter: function(image) {
             return image.tags.indexOf('jimsnurserypics') >= 0;
         },
-        template: '<a href="{{link}}"><img src="{{image}}" /></a>'
+        template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>'
     });
     userFeed.run();
 });
