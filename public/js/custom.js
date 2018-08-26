@@ -3,7 +3,7 @@ $( document ).ready(function() {
         get: 'user',
         userId: '186234050',
         accessToken: '186234050.1677ed0.7ce7885569184c4ba04e2566ac496cd3',
-        limit: 20,
+        limit: 5,
         resolution: 'standard_resolution',
         sortBy: 'most-recent',
         filter: function(image) {

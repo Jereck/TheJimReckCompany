@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600");
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
 .new-navbar {
   position: fixed;
   top: 50%;
@@ -109,17 +110,10 @@
 /* Changes the style of the overall form */
 #mc_embed_signup {
   background: transparent;
-  color: #000000;
+  color: white;
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px; }
-
-/* Styles the header text above the inputs */
-#mc_embed_signup h2 {
-  font-size: 18px;
-  margin: 0 0 20px;
-  color: #000000;
-  text-align: center; }
 
 /* Styles the input boxes */
 #mc_embed_signup input {
@@ -127,16 +121,24 @@
   width: 60%;
   padding-left: 10px;
   border: none;
-  margin-bottom: 2px;
-  border-radius: 5px; }
+  margin-bottom: 10px;
+  background: transparent;
+  border-bottom: 2px solid white;
+  outline: none;
+  color: white;
+  font-size: 1rem; }
+  #mc_embed_signup input::placeholder {
+    color: white; }
 
 /* Styles the subscribe button */
 #mc_embed_signup .button {
-  background-color: transparent;
+  background-color: #b0d3bf;
   color: #ffffff;
   margin: 0 auto;
-  border: none;
-  outline: none; }
+  border: 1px solid white; }
+  #mc_embed_signup .button:hover {
+    transition: background-color .5s ease-in;
+    background-color: #c6dc93; }
 
 .fa-input {
   font-family: "Font Awesome 5 Free";
