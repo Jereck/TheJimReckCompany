@@ -279,10 +279,12 @@ header {
     display: none; }
   header .mast-header {
     position: absolute;
+    top: 25%;
     left: 50%;
     width: 80%; }
     header .mast-header h1 {
-      font-size: 2rem; }
+      text-align: center;
+      font-size: 2.5rem; }
   header .mast-body {
     min-width: 100%; }
     header .mast-body h2 {
@@ -306,7 +308,9 @@ header {
       padding-left: 10px;
       border: none;
       margin-bottom: 2px;
-      border-radius: 5px; }
+      border-bottom: 1px solid white; }
+    #newsletter #mc_embed_signup .button {
+      border: none; }
   #contact .contact-header {
     width: 100%; }
   #contact h1 {
@@ -318,8 +322,9 @@ header {
     #contact .form-container .form-group input[type="text"], #contact .form-container .form-group input[type="email"], #contact .form-container .form-group textarea {
       font-size: 1rem; }
     #contact .form-container .form-group .submit {
-      height: 25px;
       font-size: 1rem;
       margin-bottom: 20px; }
-  #footer .footer-container {
-    grid-template-columns: auto; } }
+  #footer {
+    text-align: center; }
+    #footer .footer-container {
+      grid-template-columns: auto; } }
